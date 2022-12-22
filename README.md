@@ -1,19 +1,8 @@
 # Desafío 15 - Desplegar Proyecto en la Nube
 
-## Instalación
+## Enlace a la APP desplegada
 
-Primero debemos crear un archivo en la raiz proyecto con el nombre `.env` con el siguiente contenido y configurar los siguientes datos:
-```
-NODE_ENV=local
-NODE_PORT=8080
-HOST_DB (Host de la base de datos MariaDB)
-PORT_DB (Port de la base de datos MariaDB)
-USER_DB (Usuario de la base de datos MariaDB)
-PASS_DB (Password de la base de datos MariaDB)
-NAME_DB (Nombre de la base de datos MariaDB)
-
-```
-Acá estamos configurando una variable de entorno para nuestro proyecto, en este caso el puerto que usará el servidor.
+https://desafio15-desplegar-proyecto-production.up.railway.app/
 
 ## Ejecutar en producción
 
