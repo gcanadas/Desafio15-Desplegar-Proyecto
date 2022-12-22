@@ -7,7 +7,8 @@ class ContenedorMongoDb {
     }
     async connect() {
         try {
-            await mongoose.connect(config.config.mongoDB.URI);
+            const URI = process.env.MONGO_URI;
+            await mongoose.connect(URI);
             console.log('Conectado correctamente a la Base de datos MongoDb');
         } catch (err) {
             logger.error('Error en el metodo connect de ContenedorMongoDb', err.message);
