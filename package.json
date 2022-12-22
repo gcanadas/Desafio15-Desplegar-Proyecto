@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "0x app.js",
+    "start": "node app.js",
     "prof": "node --prof app.js",
     "dev": "nodemon --exec node -r dotenv/config ./app.js",
     "test": "node benchmark.js"
