@@ -20,7 +20,7 @@ const os = require ('os');
 
 const logger = require('./logger');
 const indexRouter = require('./routes/index');
-const productTest = require('./routes/productTest')
+//const productTest = require('./routes/productTest')
 const randomRouter = require('./routes/random')
 const LocalStrategy = Strategy;
 
@@ -110,7 +110,7 @@ app.use(passport.session());
 app.use('/', indexRouter);
 app.use('/login', indexRouter);
 app.use('/logout', indexRouter);
-app.use('/productos-test', productTest);
+//app.use('/productos-test', productTest);
 app.use('/api', randomRouter);
 
 const port = normalizePort(process.env.PORT || '3000');
